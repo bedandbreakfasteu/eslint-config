@@ -12,7 +12,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'prettier',
         'plugin:import/errors',
-        'plugin:import/typescrconstipt',
+        'plugin:import/typescript',
         'plugin:import/warnings',
         'plugin:react/recommended',
         'plugin:prettier/recommended',

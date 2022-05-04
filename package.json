@@ -1,6 +1,6 @@
 {
     "name": "@bedandbreakfasteu/eslint-config",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "ESLint Config",
     "license": "MIT",
     "repository": {
