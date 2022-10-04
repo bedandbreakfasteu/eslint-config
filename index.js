@@ -4,7 +4,7 @@ var prettierConfig = require('@bedandbreakfasteu/prettier-config');
 module.exports = {
     ignorePatterns: ['lib/**/*.js', 'dist/**/*.js', 'node_modules'],
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'import', 'prettier'],
+    plugins: ['@typescript-eslint', 'import', 'eslint-plugin-jsx-a11y', 'prettier'],
     extends: [
         'airbnb-base',
         'eslint:recommended',
@@ -14,6 +14,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/typescript',
         'plugin:import/warnings',
+        'plugin:jsx-a11y/recommended',
         'plugin:react/recommended',
         'plugin:prettier/recommended',
     ],
@@ -23,6 +24,17 @@ module.exports = {
         'prettier/prettier': [2, prettierConfig],
         'lines-between-class-members': [2, 'always', { exceptAfterSingleLine: true }],
         'class-methods-use-this': 0,
+        'jsx-a11y/no-static-element-interactions': ['warn'],
+        'jsx-a11y/click-events-have-key-events': ['warn'],
+        // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402#issuecomment-368305051
+        'jsx-a11y/anchor-is-valid': [
+            'warn',
+            {
+                components: ['Link'],
+                specialLink: ['hrefLeft', 'hrefRight'],
+                aspects: ['invalidHref', 'preferButton'],
+            },
+        ],
         'import/extensions': ['error', 'never'],
         'import/prefer-default-export': 0,
         'import/no-default-export': 2,
