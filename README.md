@@ -1,54 +1,24 @@
-# eslint-config
+# @bedandbreakfasteu/eslint-config
 
 The ESLint configuration for Bedandbreakfast.eu
 
 ## Usage
 
-1. Setup your project to use `@bedandbreakfasteu/prettier-config` by [following this README](https://github.com/bedandbreakfasteu/prettier-config#readme).
-
-2. Make sure `@bedandbreakfasteu/eslint-config` is available in your project.
-
-3. Add an `.eslintrc.js` file at the root of your project that extends this config:
-
-    ```js
-    module.exports = {
-        extends: '@bedandbreakfasteu/eslint-config',
-    };
-    ```
-
-4. Install the required dependencies into your project using:
+1. Install this package along with our [prettier-config](https://github.com/bedandbreakfasteu/prettier-config) using:
 
     ```bash
-    (
-      export PKG=@bedandbreakfasteu/eslint-config;
-      npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev
-    )
+    yarn add --dev @bedandbreakfasteu/eslint-config@bedandbreakfasteu/eslint-config#2.0.0 @bedandbreakfasteu/prettier-config@bedandbreakfasteu/prettier-config#1.0.1
     ```
 
-    This copies the peerDependencies of this project as devDependencies into yours.
-
-    On Windows this should work using [Git for Windows](https://gitforwindows.org/).
-
-5. To run ESLint as a pre-commit hook and automatically fix issues add [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) using:
+2. Install the required devDependencies using:
 
     ```bash
-    npm install husky lint-staged --save-dev
+    curl -o - https://raw.githubusercontent.com/bedandbreakfasteu/eslint-config/main/package.json \
+    | jq '{ "peerDependencies" }.peerDependencies' \
+    | command sed 's/[\{\},]//g ; s/: /@/g' \
+    | xargs yarn add --dev
     ```
 
-    Then copy the following to your `package.json`:
+3. Add `"extends": "@bedandbreakfasteu/eslint-config"` to your `.eslintrc`
 
-    ```json
-     "husky": {
-       "hooks": {
-         "pre-commit": "lint-staged"
-       }
-     },
-     "lint-staged": {
-       "*.{js,jsx,ts,tsx}": [
-         "eslint --fix",
-         "git add"
-       ]
-     }
-    ```
-
-    That's it, happy coding!
+That's it, happy coding!
