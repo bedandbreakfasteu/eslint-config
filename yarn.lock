@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@bedandbreakfasteu/prettier-config@bedandbreakfasteu/prettier-config":
-  version "1.0.1"
-  resolved "https://codeload.github.com/bedandbreakfasteu/prettier-config/tar.gz/a7245880a3e2228f4a13e69bc90b6a7f6b78a855"
+"@bedandbreakfasteu/prettier-config@bedandbreakfasteu/prettier-config#1.0.2":
+  version "1.0.2"
+  resolved "https://codeload.github.com/bedandbreakfasteu/prettier-config/tar.gz/24a1008b082cf84c225307ebd84144565ab89e5f"
 
 "@eslint/eslintrc@^1.3.3":
   version "1.3.3"

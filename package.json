@@ -26,7 +26,7 @@
         "typescript": "^4.8.4"
     },
     "devDependencies": {
-        "@bedandbreakfasteu/prettier-config": "bedandbreakfasteu/prettier-config",
+        "@bedandbreakfasteu/prettier-config": "bedandbreakfasteu/prettier-config#1.0.2",
         "@typescript-eslint/eslint-plugin": "^5.40.1",
         "@typescript-eslint/parser": "^5.40.1",
         "eslint": "^8.26.0",
