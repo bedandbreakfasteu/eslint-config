@@ -7,7 +7,7 @@ The ESLint configuration for Bedandbreakfast.eu
 1. Install this package along with our [prettier-config](https://github.com/bedandbreakfasteu/prettier-config) using:
 
     ```bash
-    yarn add --dev @bedandbreakfasteu/eslint-config@bedandbreakfasteu/eslint-config#2.0.2 @bedandbreakfasteu/prettier-config@bedandbreakfasteu/prettier-config#1.0.2
+    yarn add --dev @bedandbreakfasteu/eslint-config@bedandbreakfasteu/eslint-config#2.0.3 @bedandbreakfasteu/prettier-config@bedandbreakfasteu/prettier-config#1.0.2
     ```
 
 2. Install the required devDependencies using:

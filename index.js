@@ -4,7 +4,7 @@ var prettierConfig = require('@bedandbreakfasteu/prettier-config');
 module.exports = {
     ignorePatterns: ['lib/**/*.js', 'dist/**/*.js', 'node_modules'],
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'import', 'prettier'],
+    plugins: ['@typescript-eslint', 'import', 'yaml', 'prettier'],
     extends: [
         'airbnb-base',
         'eslint:recommended',
@@ -14,6 +14,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/typescript',
         'plugin:import/warnings',
+        'plugin:yaml/recommended',
         'plugin:prettier/recommended',
     ],
     rules: {
